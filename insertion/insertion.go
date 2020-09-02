@@ -2,7 +2,7 @@ package insertion
 
 // SortInt will sort a list using insertion sort algorithm
 //
-// O(N^2) without binary serach and O(N log N) with binary search.
+// O(N^2) without binary search.
 func SortInt(list []int) {
 	var sorted []int
 
@@ -20,7 +20,6 @@ func SortInt(list []int) {
 // insert will add a value into a sorted list if this value is less than
 // an element of the list will add it to the left and move all list right
 // otherwise, will put the value last.
-
 func insert(sorted []int, value int) []int {
 	for i, sortedValue := range sorted {
 		if value < sortedValue {
@@ -28,4 +27,12 @@ func insert(sorted []int, value int) []int {
 		}
 	}
 	return append(sorted, value)
+}
+
+// SortIntBS will sort a list using insertion sort algorithm with
+// Binary Search.
+//
+// Time complexity O(N log N)
+func SortIntBS(list []int) {
+
 }
