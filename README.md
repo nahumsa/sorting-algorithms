@@ -8,3 +8,4 @@ Sorting algorithms implemented:
 - Insertion Sort: Time complexity of O(N²);
 - Shell Sort: Time complexity of O(N (log N)²).
 - Merge Sort: Time complexity of O(N log N)
+- Qucik Sort: Time comlexity of O(N²)
